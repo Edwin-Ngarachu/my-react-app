@@ -1,11 +1,13 @@
+
 import React from 'react';
 
 const BookItem = ({ book }) => {
   return (
     <div style={styles.bookItem}>
-      <h3>{book.title}</h3>
+      <h2>{book.title}</h2>
       <p>Author: {book.author}</p>
       <p>Year: {book.year}</p>
+      <p>Summary: {book.Summary}</p>
     </div>
   );
 };
@@ -16,7 +18,7 @@ const styles = {
     borderRadius: '5px',
     padding: '10px',
     margin: '10px',
-    width: '200px',
+    width: '400px',
     textAlign: 'center',
     backgroundColor: '#f9f9f9',
   },
